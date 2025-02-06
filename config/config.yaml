@@ -1,0 +1,20 @@
+# config/config.yaml
+# Global configuration settings
+
+api:
+  binance:
+    api_key: "qQXNa6cumbNIST1zAzOd5YDk4izB2cAINxAo55PLe0rqKpayU0WfjDX24j3bquSd"
+    api_secret: "Rjr42qJhw3d5ejrk5flZDix12DcAvtz3qZLcnFVCimBte59EQPscm3Fzh5KiWrYE"
+    base_url: "https://api.binance.com"
+
+trading:
+  capital_base: 100   # $100 capital base for example
+  turnover_multiplier: 30    # Rough multiplier for daily turnover estimation
+
+risk:
+  max_exposure: 1.0         # Maximum 33% of capital in a single position
+  volatility_threshold: 0.1  # Example threshold for circuit breaker activation
+
+logging:
+  level: DEBUG
+  file: "../logs/trading_system.log"
